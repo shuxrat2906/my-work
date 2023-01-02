@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --aqua: #7177F1;
+  --mont: "Montserrat";
+}
+
+body {
+  font-family: var(--mont);
+}
+
+.menu {
+  color: var(--aqua) !important;
+  font-family: var(--mont);
+  display: flex;
+  font-size: 24px;
+}
+
+.menu:hover {
+  box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+  border-radius: 8px;
+  background: var(--aqua);
+  color: white !important;
+}
+
+.btn-aqua {
+  background: var(--aqua);
+}
+
+.intro__top {
+  max-width: 520px;
+  width: 100%;
+}
+
+.intro__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title {
+  color: var(--aqua);
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 40px;
+}
+
+.tech {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--aqua);
+  gap: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background: var(--aqua);
+  border: unset;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.carousel-indicators {
+  margin: 0;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.front__message {
+  width: 40px;
+  height: 40px;
+  background: #0FDAC2;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.accordion-button::after{
+  background-image:url(../img/caret-up-fill.svg);
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url(../img/caret-down.svg);
+}
+
+.accordion-button.collapsed{
+  color: var(--aqua);
+}
+
+.accordion-button:not(.collapsed){
+  background: var(--aqua);
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button.collapsed>svg>path{
+  fill: var(--aqua);
+}
+
+.accordion-body{
+  background: var(--aqua);
+  color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: var(--aqua);
+}
+
+.nav-pills .nav-link{
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
+  border-radius: unset;
+  text-transform: uppercase;
+}
+
+/* Main finished */
+/* Footer starts */
+
+.footer__content {
+  max-width: 630px;
+  width: 100%;
+}
